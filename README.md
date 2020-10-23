@@ -1,2 +1,2 @@
 # flavors
-Xamarin.Forms flavors approach to generate different apps from the same solution.
+Xamarin.Forms build variants approach to generate different apps from the same solution.
