@@ -23,15 +23,15 @@
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>Flavors DEV</string>
+	<string>Flavors QA</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.rodrigotristany.flavors.dev</string>
+	<string>com.rodrigotristany.flavors.qa</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
-	<string>Flavors DEV</string>
+	<string>Flavors QA</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>

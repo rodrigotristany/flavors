@@ -6,10 +6,164 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebugType>portable</DebugType>
+    <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugQa|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\DebugQa</OutputPath>
+    <DefineConstants>TRACE;DEBUGQA;NETSTANDARD;NETSTANDARD2_0;__QA__;</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>obj\DebugQa</IntermediateOutputPath>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugProd|AnyCPU' ">
+    <IntermediateOutputPath>obj\DebugProd</IntermediateOutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\DebugProd</OutputPath>
+    <DefineConstants>TRACE;DEBUGPROD;NETSTANDARD;NETSTANDARD2_0;__PROD__;</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseQa|AnyCPU' ">
+    <IntermediateOutputPath>obj\ReleaseQa</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\ReleaseQa</OutputPath>
+    <DefineConstants>TRACE;RELEASEQA;NETSTANDARD;NETSTANDARD2_0;__QA__;</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseProd|AnyCPU' ">
+    <IntermediateOutputPath>obj\ReleaseProd</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\ReleaseProd</OutputPath>
+    <DefineConstants>TRACE;RELEASEPROD;NETSTANDARD;NETSTANDARD2_0;__PROD__;</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <IntermediateOutputPath>obj\iPhone\Debug</IntermediateOutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <IntermediateOutputPath>obj\iPhoneSimulator\Debug</IntermediateOutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugQa|iPhone' ">
+    <IntermediateOutputPath>obj\iPhone\DebugQa</IntermediateOutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\DebugQa</OutputPath>
+    <DefineConstants>DEBUGQA;NETSTANDARD;NETSTANDARD2_0;__QA__;</DefineConstants>
+    <NoWarn>1702;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugQa|iPhoneSimulator' ">
+    <IntermediateOutputPath>obj\iPhoneSimulator\DebugQa</IntermediateOutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\DebugQa</OutputPath>
+    <DefineConstants>TRACE;DEBUGQA;NETSTANDARD;NETSTANDARD2_0;__QA__;</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugProd|iPhone' ">
+    <IntermediateOutputPath>obj\iPhone\DebugProd</IntermediateOutputPath>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\DebugProd</OutputPath>
+    <DefineConstants>DEBUGPROD;NETSTANDARD;NETSTANDARD2_0;__PROD__;</DefineConstants>
+    <NoWarn>1702;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugProd|iPhoneSimulator' ">
+    <IntermediateOutputPath>obj\iPhoneSimulator\DebugProd</IntermediateOutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\DebugProd</OutputPath>
+    <DefineConstants>DEBUGPROD;NETSTANDARD;NETSTANDARD2_0;__PROD__;</DefineConstants>
+    <NoWarn>1702;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <IntermediateOutputPath>obj\iPhone\Release</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>RELEASE;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <IntermediateOutputPath>obj\iPhoneSimulator\Release</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>RELEASE;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseQa|iPhone' ">
+    <IntermediateOutputPath>obj\iPhone\ReleaseQa</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\ReleaseQa</OutputPath>
+    <DefineConstants>RELEASEQA;NETSTANDARD;NETSTANDARD2_0;__QA__;</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseQa|iPhoneSimulator' ">
+    <IntermediateOutputPath>obj\iPhoneSimulator\ReleaseQa</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\ReleaseQa</OutputPath>
+    <DefineConstants>RELEASEQA;NETSTANDARD;NETSTANDARD2_0;__QA__;</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseProd|iPhone' ">
+    <IntermediateOutputPath>obj\iPhone\ReleaseProd</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\ReleaseProd</OutputPath>
+    <DefineConstants>RELEASEPROD;NETSTANDARD;NETSTANDARD2_0;__PROD__;</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseProd|iPhoneSimulator' ">
+    <IntermediateOutputPath>obj\iPhoneSimulator\ReleaseProd</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\ReleaseProd</OutputPath>
+    <DefineConstants>RELEASEPROD;NETSTANDARD;NETSTANDARD2_0;__PROD__;</DefineConstants>
+    <NoWarn>1701;1702</NoWarn>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
