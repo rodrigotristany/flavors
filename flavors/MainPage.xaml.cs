@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net.Http;
+using flavors.AppLayer.Environments;
+using flavors.DataLayer.Api;
 using Xamarin.Forms;
 
 namespace flavors
 {
     public partial class MainPage : ContentPage
     {
+        private HttpClient httpClient;
+
         public MainPage()
         {
             InitializeComponent();

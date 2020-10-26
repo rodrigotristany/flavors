@@ -1,0 +1,20 @@
+﻿{
+  "Dev": {
+    "BaseUrl": "http://iamabaseurl.dev.com",
+    "BaseUrlPort5000": "http://iamabaseurlwithport.dev.com",
+    "GoogleMapKey": "googleMapKeyDev",
+    "PageTitle": "We are in DEV"
+  },
+  "Qa": {
+    "BaseUrl": "http://iamabaseurl.qa.com",
+    "BaseUrlPort5000": "http://iamabaseurlwithport.qa.com",
+    "GoogleMapKey": "googleMapKeyQa",
+    "PageTitle": "We are in QA"
+  },
+  "Prod": {
+    "BaseUrl": "http://iamabaseurl.com",
+    "BaseUrlPort5000": "http://iamabaseurlwithport.com",
+    "GoogleMapKey": "googleMapKey",
+    "PageTitle": "We are in PROD"
+  }
+}
